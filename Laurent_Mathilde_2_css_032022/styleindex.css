@@ -1,0 +1,814 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    width: 97%;
+}
+
+header img{
+    margin: 3%;
+    width: 100px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-right: 2%;
+}
+
+nav a{
+    color: black;
+    text-decoration: none;
+    padding-top: 19%;
+    font-family: 'Raleway', sans-serif;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+nav a:hover{
+    color: blue;
+    border-top: 2px solid blue;
+    font-family: 'Raleway', sans-serif;
+}
+
+h2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+#formulaire p{
+    font-family: 'Raleway', sans-serif;
+}
+
+#formulaire{
+    padding-left: 5%;
+    padding-bottom: 3%;
+}
+
+#recherche_mobile{
+    display: none;
+}
+
+form{
+    display: flex;
+    padding-top: 3%;
+    height: 4%;
+}
+
+fieldset{
+    border: none;
+    height: 50px;
+    width: 230px;
+}
+
+.ville{
+    height: 50px;
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+#bouton_1{
+    width: 50px;
+    background-color: #F2F2F2;
+    border: none;
+    border-radius: 15px 0 0 15px;
+}
+
+#bouton_1 i{
+    font-size: 20px;
+}
+
+#bouton_2{
+    width: 130px;
+    background-color: #0065FC;
+    border: none;
+    color: white;
+    border-radius: 0 15px 15px 0;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+}
+
+#btn_mobile_2{
+    display: none;
+}
+
+#container{
+    display: flex;
+    align-items: flex-start;
+}
+
+#container h2{
+   margin-top: 5%;
+   padding-right: 3%;
+}
+
+#filtres_presentation{
+    display: flex;
+    align-items: center;
+    padding-top: 3%;
+    width: 100%;
+    
+}
+
+.filtre{
+	background-color: white;
+	border-radius: 50px;
+	border: 2px solid lightgray;
+	display: flex;
+    align-items: center;
+    margin: 2%;
+}
+
+#filtres_presentation a{
+    color: black;
+    text-decoration: none;
+}
+
+#filtres_presentation a:hover{
+    animation-name: survol;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+.btn i{
+	color: #0065FC;
+    font-size: 18px;
+	background-color: #DEEBFF;
+	padding: 15px;
+	border-radius: 50%;	
+}
+
+@keyframes survol{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(359deg);}
+}
+
+.filtre p{
+	padding-left: 10px;
+    padding-right: 15px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+}
+
+.filtre a{
+    text-decoration: none;
+    color: black;
+}
+
+#informations{
+    display: flex;
+    align-items: center;
+    padding-top: 3%;
+}
+
+.lien{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    position: relative;
+    border: 1px solid lightgray;
+}
+
+.lien i{
+    position: absolute;
+    color: #0065FC;
+    top: 5px;
+    left: 9px;
+    font-size: 12px;
+    font-weight: 900;
+}
+
+#informations p{
+    font-family: 'Raleway', sans-serif;
+    margin-left: 10px;
+}
+
+#hebergements{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+h3{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    padding-left: 5%;
+}
+
+figcaption{
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    font-weight: 900;
+    padding-left: 3%;
+    padding-bottom: 1%;
+    padding-top: 3%;
+}
+
+#hebergements-filtres{
+    background-color: #F2F2F2;
+    width: 65%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-bottom: 50px;
+}
+
+#cartes{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.propositions .notation{
+    padding-left: 3%;
+}
+
+.notation i{
+    font-size: 12px;
+    padding-top: 3%;
+}
+
+.fa-star.blue{
+    color: #0065FC;
+}
+
+.fa-star.grey{
+    color: lightgray
+}
+
+.propositions{
+    width: 28%;
+    height: 200px;
+    border: 1px solid #F1EFEE;
+    border-radius: 20px;
+    background-color: white;
+    padding: 0.5%;
+    margin: 2%;
+    box-shadow: #D7D7D7 0 0 15px;
+}
+
+.propositions img{
+    position: relative;
+    width: 100%;
+    height: 115px;
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+}
+
+#hebergements-filtres h4{
+    font-size: 17px;
+    font-family: 'Raleway', sans-serif;
+    padding-left: 3%;
+    padding-top: 2%;
+}
+
+.propositions p{
+    font-size: 13px;
+    font-family: 'Raleway', sans-serif;
+    padding-left: 3%;
+    padding-top: 2%;
+}
+
+#hebergements-filtres a{
+    color: black;
+    text-decoration: none;
+}
+
+#hebergements-populaires{
+    background-color: #F2F2F2;
+    width: 31%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 45px;
+}
+
+#cartes_populaires{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 90%;
+}
+
+#titre-populaire{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+#titre-populaire i{
+    font-size: 20px;
+    padding-right: 20px;
+}
+
+.propositions-populaires{
+    display: flex;
+    width: 80%;
+    height: 150px;
+    border: 1px solid #F1EFEE;
+    border-radius: 20px;
+    background-color: white;
+    margin-bottom: 25px;
+    box-shadow: #D7D7D7 0 0 15px;
+}
+
+.propositions-populaires img{
+    position: relative;
+    height: 100%;
+    width: 130px;
+    border-radius: 15px 0 0 15px;
+    object-fit: cover;
+    padding: 4px;
+}
+
+#hebergements-populaires a{
+    color: black;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+}
+
+.nom{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-bottom: 1%;
+}
+
+.nom h4{
+    font-size: 15px;
+    font-weight: 900;
+}
+
+.nom p{
+    font-size: 14px;
+}
+
+#Activités{
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+
+#activites{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 450px;
+    margin-bottom: 5%;
+    margin-top: 2%;
+    margin-left: 3%;
+    margin-right: 3%;
+    flex-wrap: wrap;
+}
+
+#activites a{
+    text-decoration: none;
+}
+
+.lien_activites{
+    text-decoration: none;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    font-weight: 900;
+    padding-left: 5%;
+    padding-top: 5%;
+}
+
+.vignettes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 22%;
+    height: 100%;
+}
+
+#vieux_port{
+    width: 22%;
+    height: 100%;
+    border: 1px solid #F2F2F2;
+    border-radius: 15px;
+    box-shadow: #D7D7D7 0 0 15px;
+}
+
+#vieux_port img{
+    position: relative;
+    width: 100%;
+    height: 380px;
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+}
+
+#fort_pomegues{
+    width: 100%;
+    height: 50%;
+    border: 1px solid #F2F2F2;
+    border-radius: 15px;
+    margin-bottom: 8%;
+    box-shadow: #D7D7D7 0 0 15px;
+}
+
+#fort_pomegues img{
+    position: relative;
+    width: 100%;
+    height: 165px;
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+}
+
+#iles_frioul{
+    width: 100%;
+    height: 40%;
+    border: 1px solid #F2F2F2;
+    border-radius: 15px;
+    box-shadow: #D7D7D7 0 0 15px;
+}
+
+#iles_frioul img{
+    position: relative;
+    width: 100%;
+    height: 110px;
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+}
+
+#calanques{
+    width: 22%;
+    height: 100%;
+    border: 1px solid #F2F2F2;
+    border-radius: 15px;
+    box-shadow: #D7D7D7 0 0 15px;
+}
+
+#calanques img{
+    position: relative;
+    width: 100%;
+    height: 380px;
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+}
+
+#notre_dame{
+    width: 100%;
+    height: 45%;
+    border: 1px solid #F2F2F2;
+    border-radius: 15px;
+    margin-bottom: 8%;
+    box-shadow: #D7D7D7 0 0 15px;
+}
+
+#notre_dame img{
+    position: relative;
+    width: 100%;
+    height: 140px;
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+}
+
+#longchamp{
+    width: 100%;
+    height: 47%;
+    border: 1px solid #F2F2F2;
+    border-radius: 15px;
+    box-shadow: #D7D7D7 0 0 15px;
+}
+
+#longchamp img{
+    position: relative;
+    width: 100%;
+    height: 150px;
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+}
+
+footer{
+    display: flex;
+    background-color: #F2F2F2;
+}
+
+.renseignements h4{
+    padding-bottom: 7%;
+    font-size: 16px;
+    font-weight: 900;
+    font-family: 'Raleway', sans-serif;
+}
+
+.renseignements{
+    display: flex;
+    flex-direction: column;
+    padding-right: 150px;
+    margin: 3%;
+}
+
+.renseignements a{
+    text-decoration: none;
+    color: black;
+    padding-bottom: 5%;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Format tablettes */
+@media all and (min-width: 768px) and (max-width: 992px){
+    .propositions{
+        width: 40%;
+    }
+
+    #hebergements-populaires{
+        padding-bottom: 45px;
+    }
+    
+    .propositions-populaires{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: 220px;
+    }
+
+    .propositions-populaires img{
+        width: 100%;
+        height: 130px;
+        border-radius: 15px 15px 0 0;
+    }
+
+    .nom h4{
+        padding-bottom: 1%;
+        font-size: 15px;
+    }
+
+    .nom{
+        padding-top: 2%;
+    }
+
+    .nom .notation{
+        padding-top: 1%;
+    }
+
+    #activites{
+        height: auto;
+    }
+
+    .vignettes{
+        flex-direction: row;
+        justify-content: space-between;
+        width: 70%;
+        margin-bottom: 8%;
+    }
+
+    #vieux_port, #calanques{
+        width: 30%;
+        margin-bottom: 8%;
+    }
+
+    #vieux_port img{
+        height: 150px;
+    }
+
+    #fort_pomegues{
+        max-width: 42%;
+        margin-bottom: 0;
+        margin-left: 8%;
+    }
+
+    #fort_pomegues img{
+        height: 150px;
+    }
+
+    #iles_frioul{
+        max-width: 42%;
+    }
+
+    #iles_frioul img{
+        height: 150px;
+    }
+
+    #calanques img{
+        height: 150px;
+    }
+
+    #notre_dame{
+        width: 42%;
+        margin-bottom: 0;
+        margin-left: 8%;
+    }
+
+    #notre_dame img{
+        height: 150px;
+    }
+
+    #longchamp{
+        width: 42%;
+    }
+
+    #longchamp img{
+        height: 150px;
+    }
+}
+
+/* Format smartphones */
+@media all and (max-width: 768px){
+    header{
+        flex-direction: column;
+        align-items: center;
+        padding-top: 3%;
+        border-bottom: 3px solid #F2F2F2;
+    }
+
+    nav{
+        width: 100%;
+        justify-content: space-between;
+        padding: 0;
+        margin-top: 10%;
+    }
+
+    nav a{
+        font-size: 18px;
+        padding: 0;
+        padding-left: 13%;
+        padding-right: 13%;
+        padding-bottom: 5%;
+    }
+
+    nav a:hover{
+        border-top: none;
+        border-bottom: 3px solid blue;
+    }
+
+    #formulaire h2{
+        margin-top: 10%;
+        font-size: 22px;
+    }
+
+    #bouton_2{
+        display: none;
+    }
+    
+    #btn_mobile_2{
+        display: block;
+        width: 60px;
+        background-color: #0065FC;
+        color: white;
+        font-size: 18px;
+        border: none;
+        border-radius: 15px;
+    }
+
+    #container{
+        flex-direction: column; 
+    }
+
+    #container h2{
+        font-size: 15px;
+        margin-top: 5%;
+    }
+
+    #filtres_presentation{
+        flex-wrap: wrap;
+    }
+
+    #informations{
+        align-items: flex-start;
+    }
+
+    #informations p{
+        font-size: 15px;
+    }
+
+    #hebergements{
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 0;
+    }
+
+    #hebergements-populaires{
+        width: 100%;
+        border-radius: 0px;
+        margin: 0;
+    }
+
+    #titre-populaire{
+        margin-bottom: 5%;
+    }
+
+    .propositions-populaires{
+        width: 90%;
+    }
+
+    #hebergements-filtres{
+        width: 100%;
+        background-color: white;
+    }
+
+    .propositions{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: 10%;
+    }
+
+    .propositions p{
+        padding-top: 1%;
+    }
+
+    .notation i{
+        width: 10px;
+        padding-bottom: 5px;
+    }
+
+    #activites{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+
+    .vignettes{
+        width: 90%;
+        margin-bottom: 8%;
+    }
+
+    #vieux_port{
+        width: 90%;
+        height: auto;
+        margin-bottom: 8%;
+    }
+
+    #vieux_port img{
+        height: 150px;
+    }
+
+    #fort_pomegues{
+        width: 100%;
+        height: auto;
+    }
+
+    #fort_pomegues img{
+        height: 150px;
+    }
+
+    #iles_frioul{
+        width: 100%;
+        height: auto;
+    }
+
+    #iles_frioul img{
+        height: 150px;
+    }
+
+    #calanques{
+        width: 90%;
+        height: auto;
+        margin-bottom: 8%;
+    }
+
+    #calanques img{
+        height: 150px;
+    }
+
+    #notre_dame{
+        width: 100%;
+        height: auto;
+    }
+
+    #notre_dame img{
+        height: 150px;
+    }
+
+    #longchamp{
+        width: 100%;
+        height: auto;
+    }
+
+    #longchamp img{
+        height: 150px;
+    }
+
+    footer{
+        flex-direction: column;
+    }
+
+    .renseignements{
+        margin-top: 10%;
+        margin-left: 10%;
+    }
+}
